@@ -1,6 +1,8 @@
 function FizzBuzz() {
     this.check = (number) => {
-        if (number % 5 === 0) {
+        if (number % 15 === 0) {
+            return 'FizzBuzz';
+        } else if (number % 5 === 0) {
             return 'Buzz';
         } else if (number % 3 === 0) {
             return 'Fizz';
@@ -9,6 +11,7 @@ function FizzBuzz() {
         }
     }
 }
+
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = FizzBuzz;

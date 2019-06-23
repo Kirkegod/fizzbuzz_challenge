@@ -5,7 +5,8 @@ Author: Camilla Kirkegaard
 Explain: 
 1. global.browser = new BrowserHelpers()
 2. global.expect = chai.expect;
-3. In your README to the best of your knowledge please explain the difference between using === and == in JS?
+3. explain the difference between using === and == in JS?
+4. explain why we are moving (number % 5 === 0) to the top?
 
 
 
