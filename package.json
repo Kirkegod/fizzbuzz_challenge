@@ -3,9 +3,30 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run features && npm run specs",
+    "features": "superstatic src -p 8080 & mocha --timeout 100000 --recursive  --reporter=spec features ; PORT=8080 npm run stop-test-server",
+    "specs": "mocha --recursive  --reporter=spec spec",
+    "server": "superstatic src -p 3000",
+    "stop-test-server": "lsof -ti tcp:$PORT | xargs kill"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Fizzbuzz project second weekend",
+  "devDependencies": {
+    "e2e_training_wheels": "0.0.36",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kirkegod/fizzbuzz_challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kirkegod/fizzbuzz_challenge/issues"
+  },
+  "homepage": "https://github.com/Kirkegod/fizzbuzz_challenge#readme",
+  "bin": {
+    "training-wheels:generate": "node ./node_modules/e2e_training_wheels/dist/generators.js",
+    "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
+  }
 }
