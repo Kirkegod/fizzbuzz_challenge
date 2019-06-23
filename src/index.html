@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Puppeteer Mocha Scaffold</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 </head>
 <body>
-    <input type="text" id="value">
-    <input type="submit" value="Check" id="button">
-    <div id="display_answer"></div>
+    <div class="ui container">
+        <h1 class="ui large header">FizzBuzz Test</h1>
+        <input class="ui" type="text" id="value"><i class="calcualtor icon"></i>
+        <input class="ui small purple button" type="submit" value="Check!" id="button">
+        <i class="calcualtor icon"></i>
+        <div id="display_answer"></div>
+    </div>
 
     <script src="js/fizzbuzz.js"></script>
-
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"></script>
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', () => {
             let button = document.getElementById('button')
             let displayDiv = document.getElementById('display_answer')
@@ -25,5 +30,6 @@
             })
         })
     </script>
-</body>
+
+</body> 
 </html>
