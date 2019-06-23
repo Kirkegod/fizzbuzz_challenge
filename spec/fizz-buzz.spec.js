@@ -13,3 +13,18 @@ it('returns FizzBuzz if number is divisible by 15', () => {
     expect(fizzBuzz.check(15)).to.eql('FizzBuzz')
 })
 })
+
+describe('User can input a value and get FizzBuzz results', () => {
+    before(async () => {
+        await  browser.init()
+        await  browser.visitPage('http://localhost:8080/')
+    });
+
+    beforeEach(async () => {
+        await  browser.page.reload();
+    })
+
+    after(async ()=> {
+        await  browser.close();
+    })
+})
