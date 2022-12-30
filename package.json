@@ -14,7 +14,7 @@
   "description": "Fizzbuzz project second weekend",
   "devDependencies": {
     "e2e_training_wheels": "0.0.36",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "dependencies": {},
   "repository": {
